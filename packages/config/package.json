@@ -1,0 +1,8 @@
+{
+  "name": "@crossborder/config",
+  "private": true,
+  "version": "0.1.0",
+  "exports": {
+    "./tsconfig/base": "./tsconfig.base.json"
+  }
+}

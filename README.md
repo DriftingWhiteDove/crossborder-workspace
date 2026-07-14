@@ -1,49 +1,37 @@
 # CrossBorder Workspace
 
-跨境电子商务一站式工作台 —— 选品分析、竞品监控、运营管理与数据洞察集成平台。
+Building AI Workspace for Modern Cross-border Sellers.
 
-## 功能特性
+🚧 Under Active Development
 
-- **选品分析** — 多平台（Amazon、AliExpress、Shopee、Lazada）选品数据聚合与趋势分析
-- **竞品监控** — 自动化竞品价格、销量、Review 变化追踪
-- **运营管理** — Listing 优化建议、广告投放辅助、库存预警
-- **数据看板** — 核心 KPI 可视化，支持自定义报表
-- **AI 赋能** — 基于大模型的智能文案生成、市场洞察与决策建议
-
-## 技术栈
-
-| 层级 | 技术 |
-|------|------|
-| 前端 | Vue 3 + TypeScript + Vite |
-| 后端 | Python FastAPI |
-| 数据库 | PostgreSQL + Redis |
-| AI | DeepSeek API / Claude API |
-| 部署 | Docker + GitHub Actions |
-
-## 项目结构
+## Structure
 
 ```
 crossborder-workspace/
-├── frontend/          # Vue 3 前端
-├── backend/           # FastAPI 后端
-├── docs/              # 文档
-├── scripts/           # 工具脚本
-└── deploy/            # 部署配置
+├── apps/
+│   ├── blog        # Astro 博客
+│   ├── workspace   # 主 Web 应用 (Next.js)
+│   ├── api         # FastAPI 后端
+│   └── worker      # Python 后台任务（预留）
+├── packages/
+│   ├── ui          # 共享 UI 组件
+│   ├── ai          # AI 服务客户端
+│   ├── shared      # 共享业务逻辑
+│   ├── types       # TypeScript 类型定义
+│   ├── utils       # 通用工具函数
+│   └── config      # 共享配置（tsconfig 等）
+└── docs/
 ```
 
-## 快速开始
+## Prerequisites
+
+- Node.js >= 20
+- pnpm >= 10
+- Python >= 3.11
+
+## Getting Started
 
 ```bash
-# 克隆仓库
-git clone https://github.com/DriftingWhiteDove/crossborder-workspace.git
-
-# 后端启动
-cd backend
-poetry install
-poetry run uvicorn app.main:app --reload
-
-# 前端启动
-cd frontend
 pnpm install
 pnpm dev
 ```

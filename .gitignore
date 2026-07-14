@@ -1,15 +1,18 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+.next/
+.turbo/
+
 # Python
 __pycache__/
 *.py[cod]
 *.egg-info/
-dist/
 .venv/
 *.egg
-
-# Node
-node_modules/
-dist/
-.turbo/
 
 # IDE
 .vscode/
@@ -24,8 +27,11 @@ Thumbs.db
 # Environment
 .env
 .env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
 
 # Project specific
-*.db
 data/
-logs/
